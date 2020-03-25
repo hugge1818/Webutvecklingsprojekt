@@ -1,11 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background: blue;
+    background-image: url(https://cdn.webhallen.com/img/backgrounds/body-default.svg);
+    background-size: cover;
+    background-position: center;
 }
 ul{
-    float: right;
+    float: left;
     list-style-type: none;
+    margin-top: 53px;
 }
 ul li{
     display: inline-block;
@@ -13,14 +16,25 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
+    padding: 20px 6px;
     border: 1px solid #fff;
     transition: 0.6s ease;
 }
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    margin-top: 41px;
+    margin-left: 25px;
+    float: left;
+    width: 150px;
+    height: auto;
+}
 .search-box{
     position: absolute;
-    top: 10%;
-    left: 84%;
+    margin-top: 65px;
+    margin-left: 84%;
     transform: translate(-50%, -50%);
     background: none;
     height: 40px;
@@ -40,7 +54,6 @@ ul li a{
     color: black;
 }
 .search-btn{
-    color: #e84118;
     float: right;
     width: 40px;
     height: 40px;
