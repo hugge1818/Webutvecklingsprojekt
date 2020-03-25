@@ -1,32 +1,80 @@
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <title>Webbsida</title>
-  <link rel="stylesheet" type="text/css" href="CSS\Style.css" />
-  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</head>
-
-<body>
-  <header>
-    <div class= "main">
-      <ul>
-        <li><a href="#">Alla kategorier</a></li>
-        <li><a href="#">Kampanjer</a></li>
-        <li><a href="#">Våra tjänster</a></li>
-        <li><a href="#">Varumärken</a></li>
-        <li><a href="#">Kundservice</a></li>
-      </ul>
-    </div>
-  </header>
-  <div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Type to search"/>
-    <a class="search-btn" href="#">
-      <i class="fas fa-search"></i>
-    </a>
-  </div>
-
-  <script src="Javascript/Javascript.js"></script>
-</body>
-
-</html>
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.webhallen.com/img/backgrounds/body-default.svg);
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 53px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 6px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    margin-top: 41px;
+    margin-left: 25px;
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.search-box{
+    position: absolute;
+    margin-top: 65px;
+    margin-left: 84%;
+    transform: translate(-50%, -50%);
+    background: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover> .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover{
+    color: white;
+    background: white;
+}
+.search-box:hover> .search-btn{
+    background: none;
+    color: black;
+}
+.search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
